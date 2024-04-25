@@ -1,0 +1,553 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navbar{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+    
+       .logo{
+        display: block;
+        width: 120px;
+       }
+.button-grp{
+    display:flex ;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    gap: 3vw;
+    margin-left: 2rem;
+
+    .grp{
+        display: flex;
+        gap: 3.8rem;
+        button{
+            height: 35px;
+            background-color: #fff;
+            border: none;
+            border: 1px solid #5f82a5;
+            border-radius: 4px;
+            a{
+                text-decoration: none;
+                color:#1976D2;
+                font-weight: 600;
+                padding: 0.6rem;
+            }
+
+        }
+    }
+}
+
+.login{
+    button{
+        height: 35px;
+        background-color: #fff;
+        border: none;
+        border: 1px solid #5f82a5;
+        border-radius: 4px;
+        a{
+            text-decoration: none;
+            color:#1976D2;
+            font-weight: 600;
+            padding: 0.6rem;
+        }
+}
+}
+
+
+.banner{
+    width: 100%;
+    display: flex;
+
+    img{
+        width: 100%;
+        object-fit: cover;
+        height:300px ;
+    }
+   
+   
+}
+
+.card-container{
+    background-color: #181818;
+
+    .heading{
+        text-align: center;
+        color: #fff;
+        padding: 1.5rem 0;
+        
+        span{
+            font-size: 0.9rem;
+        }
+    }
+}
+
+.c-heading{
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    padding:  0 1.5rem;
+    color: #fff;
+
+    h1{
+        font-weight: 400;
+    }
+    a{
+        color: #fff;
+    }
+}
+
+.card-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .card-grp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.6rem;
+    }
+    .card1{
+      display: block;
+      height: auto;
+      width: 350px;
+      border-radius: 6px;
+      background-color: #fff;
+
+      .title{
+        padding: 0.8rem 1rem;
+        h2{
+            font-weight: 100;
+        }
+        p{
+            font-weight: 100;
+           
+        }
+      }
+      .desc{
+        padding: 1rem;
+
+        p{
+            font-weight: 100;
+            font-size: 0.9rem;
+            color: #767676;
+        }
+      }
+      .links{
+        padding: 0.5rem 1rem;
+      }
+      .character{
+        display: flex;
+        justify-content: center;
+        object-fit: cover;
+
+        img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            padding: 1rem 1.5rem;
+        }
+      }
+      .links{
+        a{
+            color: #1976D2;
+            font-size: 0.9rem;
+        }
+      }
+    }
+}
+
+.episode-container{
+    background-color: #181818;
+    padding: 2rem 0;
+    .heading{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:  0 1.5rem;
+        color: #fff;
+
+        h1{
+            font-weight: 400;
+        }
+        a{
+            color: #fff;
+        }
+    }
+
+    .episode-card-grp{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1.5rem;
+
+
+        .e-card1{
+            display: block;
+            height: auto;
+            padding-bottom: 3rem;
+            width: 350px;
+            border-radius: 6px;
+            background-color: #fff;
+      
+            .title{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1rem;
+
+                button{
+                    display: flex;
+                    justify-content: center;
+                    background-color: #fff;
+                    border: none;
+                    width: 30px;
+                    border-radius: 50%;
+                    font-size: 10px;
+                    cursor: pointer;
+                }
+                button:hover{
+                    background-color: #c9c9c9;
+                }
+            }
+            .desc{
+              padding:  0 1rem;
+              line-height: 2rem;
+              h2{
+                font-size: 1.5rem;
+                font-weight: 400;
+              }
+              P{
+                font-size: 0.9rem;
+              }
+            }
+            .chr{
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 1rem;
+            }
+            .small-char{
+            
+              img{
+                width: 40px;
+                margin-right: -1rem;
+                border-radius: 100%;
+                object-fit: cover;
+              }
+            }
+            
+              
+            
+
+            .character{
+                display: flex;
+                justify-content: center;
+                img{
+                    width: 100%;
+                    border-radius: 6px  6px 0 0 ;
+                    height: 250px;
+                    object-fit: cover;
+                    
+                }
+              }
+        }
+    }
+
+}
+
+
+
+// character info from css import this part in seprate file
+.character-info{
+    background-color: #181818;
+    padding: 0 1rem;
+    .char-details{
+        display: flex;
+        gap: 1.2rem;
+        padding: 1rem 0;
+      }
+      .char-pic{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        border-radius: 6px;
+        height: auto;
+        background-color: #fff;
+        img{
+            padding: 0 3rem;
+            width: 80%;
+            object-fit: cover;
+        }
+    }
+        .charinfo{
+           background-color: #fff;
+           border-radius: 6px;
+           width: 50%;
+           padding: 1rem;
+           
+           h2{
+            text-align: center;
+            font-weight: 400;
+            border-bottom: 1px solid #000;
+            margin: 0.5rem 0;
+           }
+           p{
+            line-height: 1.5rem;
+            font-weight: 600;
+           }
+      }
+}
+
+
+//all  character  page css
+
+.char-container{
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    background-color: #181818;
+  
+    .filterdiv{
+      height: auto;
+      width: 500px;
+      background-color: #fff;
+  
+      .field-grp{
+        width: 400px;
+        padding: 1rem;
+        height: 40px;
+        line-height: 2.2rem;
+       
+  
+          #name,#status,#species,#type,#gender{
+            width: 100%;
+            padding:0 1rem ;
+            border: 1px  solid rgb(147, 146, 146);
+            height: 55px;
+            font-size: 1rem;
+          }
+      }
+    }
+    
+    .char-grpimg{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      width: 100%;
+      .card1{
+        display: block;
+        height: 480px;
+        width: 330px;
+        border-radius: 6px;
+        background-color: #fff;
+  
+        .title{
+          padding: 0.8rem 1rem;
+          h2{
+            font-weight: 100;
+          }
+        }
+        .desc{
+          padding: 1rem;
+          
+        }
+        .links{
+          padding: 0.5rem 1rem;
+        }
+        .character{
+          display: flex;
+          justify-content: center;
+          object-fit: cover;
+  
+          img{
+              width: 100%;
+              height: 300px;
+              object-fit: cover;
+              padding: 1rem 1.5rem;
+          }
+        }
+        .links{
+          a{
+              color: #1976D2;
+              font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+
+//All Episodes Pages
+
+.episodes-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 3rem;
+    background-color: #191919;
+  
+    .filterdiv{
+      height: auto;
+      width: auto;
+      background-color: #fff;
+      
+      .field-grp{
+        padding: 1rem;
+        height: 40px;
+        line-height: 2rem;
+        
+        
+        #name,#episode{
+          width: 300px;
+          padding:0 1rem ;
+          margin: 1rem 0;
+          height: 55px;
+        }
+      }
+    }
+    
+    .episode-grpimg{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+  
+       .images{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        img{
+          object-fit: cover;
+          width: 100%;
+          height: 250px;
+        }
+       }
+      .episodes-card{
+        display: block;
+        height: auto;
+        width: 330px;
+        line-height: 2rem;
+        border-radius: 6px;
+        background-color: #fff;
+       
+         .title{
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 1rem;
+         }
+         button{
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            border: none;
+            width: 30px;
+            border-radius: 50%;
+            font-size: 10px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #c9c9c9;
+        }
+         .desc{
+            padding: 1rem ;
+           
+            h2{
+                font-weight: 100;
+            }
+            p{
+                font-size: 0.8rem;
+            }
+         }
+        .character{
+          display: flex;
+          justify-content: center;
+          object-fit: cover;
+  
+          img{
+              width: 100%;
+              height: 300px;
+              object-fit: cover;
+          }
+        }
+       
+      }
+      .chr{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 1rem;
+    }
+  
+      .small-char{
+        margin-right: -1rem;
+
+        img{
+          width: 40px;
+          border-radius: 100%;
+          object-fit: cover;
+        }
+      }
+    
+    }
+  }
+
+//pagination 
+.pagination-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem ;
+  background-color: #181818;
+
+}
+.pagination{
+  width: 40%;
+  padding: 0 2rem;
+  height: 80px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  justify-content: space-between;
+
+  button{
+    height: 40px;
+    width: 100px;
+    background-color: #1976D2;
+    color: #fff;
+    border-radius: 12px;
+    border: none;
+  }
+}
+//footer
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    p{
+        font-size: 14px;
+
+        a{
+            color: #383737;
+        }
+    }
+}
+   
+

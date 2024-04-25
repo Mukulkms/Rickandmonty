@@ -1,0 +1,481 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navbar {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  display: block;
+  width: 120px;
+}
+
+.button-grp {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  gap: 3vw;
+  margin-left: 2rem;
+}
+.button-grp .grp {
+  display: flex;
+  gap: 3.8rem;
+}
+.button-grp .grp button {
+  height: 35px;
+  background-color: #fff;
+  border: none;
+  border: 1px solid #5f82a5;
+  border-radius: 4px;
+}
+.button-grp .grp button a {
+  text-decoration: none;
+  color: #1976D2;
+  font-weight: 600;
+  padding: 0.6rem;
+}
+
+.login button {
+  height: 35px;
+  background-color: #fff;
+  border: none;
+  border: 1px solid #5f82a5;
+  border-radius: 4px;
+}
+.login button a {
+  text-decoration: none;
+  color: #1976D2;
+  font-weight: 600;
+  padding: 0.6rem;
+}
+
+.banner {
+  width: 100%;
+  display: flex;
+}
+.banner img {
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+}
+
+.card-container {
+  background-color: #181818;
+}
+.card-container .heading {
+  text-align: center;
+  color: #fff;
+  padding: 1.5rem 0;
+}
+.card-container .heading span {
+  font-size: 0.9rem;
+}
+
+.c-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  color: #fff;
+}
+.c-heading h1 {
+  font-weight: 400;
+}
+.c-heading a {
+  color: #fff;
+}
+
+.card-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card-section .card-grp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem;
+}
+.card-section .card1 {
+  display: block;
+  height: auto;
+  width: 350px;
+  border-radius: 6px;
+  background-color: #fff;
+}
+.card-section .card1 .title {
+  padding: 0.8rem 1rem;
+}
+.card-section .card1 .title h2 {
+  font-weight: 100;
+}
+.card-section .card1 .title p {
+  font-weight: 100;
+}
+.card-section .card1 .desc {
+  padding: 1rem;
+}
+.card-section .card1 .desc p {
+  font-weight: 100;
+  font-size: 0.9rem;
+  color: #767676;
+}
+.card-section .card1 .links {
+  padding: 0.5rem 1rem;
+}
+.card-section .card1 .character {
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+}
+.card-section .card1 .character img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  padding: 1rem 1.5rem;
+}
+.card-section .card1 .links a {
+  color: #1976D2;
+  font-size: 0.9rem;
+}
+
+.episode-container {
+  background-color: #181818;
+  padding: 2rem 0;
+}
+.episode-container .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  color: #fff;
+}
+.episode-container .heading h1 {
+  font-weight: 400;
+}
+.episode-container .heading a {
+  color: #fff;
+}
+.episode-container .episode-card-grp {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+.episode-container .episode-card-grp .e-card1 {
+  display: block;
+  height: auto;
+  padding-bottom: 3rem;
+  width: 350px;
+  border-radius: 6px;
+  background-color: #fff;
+}
+.episode-container .episode-card-grp .e-card1 .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.episode-container .episode-card-grp .e-card1 .title button {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  border: none;
+  width: 30px;
+  border-radius: 50%;
+  font-size: 10px;
+  cursor: pointer;
+}
+.episode-container .episode-card-grp .e-card1 .title button:hover {
+  background-color: #c9c9c9;
+}
+.episode-container .episode-card-grp .e-card1 .desc {
+  padding: 0 1rem;
+  line-height: 2rem;
+}
+.episode-container .episode-card-grp .e-card1 .desc h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.episode-container .episode-card-grp .e-card1 .desc P {
+  font-size: 0.9rem;
+}
+.episode-container .episode-card-grp .e-card1 .chr {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+.episode-container .episode-card-grp .e-card1 .small-char img {
+  width: 40px;
+  margin-right: -1rem;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.episode-container .episode-card-grp .e-card1 .character {
+  display: flex;
+  justify-content: center;
+}
+.episode-container .episode-card-grp .e-card1 .character img {
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+  height: 250px;
+  object-fit: cover;
+}
+
+.character-info {
+  background-color: #181818;
+  padding: 0 1rem;
+}
+.character-info .char-details {
+  display: flex;
+  gap: 1.2rem;
+  padding: 1rem 0;
+}
+.character-info .char-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  border-radius: 6px;
+  height: auto;
+  background-color: #fff;
+}
+.character-info .char-pic img {
+  padding: 0 3rem;
+  width: 80%;
+  object-fit: cover;
+}
+.character-info .charinfo {
+  background-color: #fff;
+  border-radius: 6px;
+  width: 50%;
+  padding: 1rem;
+}
+.character-info .charinfo h2 {
+  text-align: center;
+  font-weight: 400;
+  border-bottom: 1px solid #000;
+  margin: 0.5rem 0;
+}
+.character-info .charinfo p {
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+.char-container {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  background-color: #181818;
+}
+.char-container .filterdiv {
+  height: auto;
+  width: 500px;
+  background-color: #fff;
+}
+.char-container .filterdiv .field-grp {
+  width: 400px;
+  padding: 1rem;
+  height: 40px;
+  line-height: 2.2rem;
+}
+.char-container .filterdiv .field-grp #name, .char-container .filterdiv .field-grp #status, .char-container .filterdiv .field-grp #species, .char-container .filterdiv .field-grp #type, .char-container .filterdiv .field-grp #gender {
+  width: 100%;
+  padding: 0 1rem;
+  border: 1px solid rgb(147, 146, 146);
+  height: 55px;
+  font-size: 1rem;
+}
+.char-container .char-grpimg {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+}
+.char-container .char-grpimg .card1 {
+  display: block;
+  height: 480px;
+  width: 330px;
+  border-radius: 6px;
+  background-color: #fff;
+}
+.char-container .char-grpimg .card1 .title {
+  padding: 0.8rem 1rem;
+}
+.char-container .char-grpimg .card1 .title h2 {
+  font-weight: 100;
+}
+.char-container .char-grpimg .card1 .desc {
+  padding: 1rem;
+}
+.char-container .char-grpimg .card1 .links {
+  padding: 0.5rem 1rem;
+}
+.char-container .char-grpimg .card1 .character {
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+}
+.char-container .char-grpimg .card1 .character img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  padding: 1rem 1.5rem;
+}
+.char-container .char-grpimg .card1 .links a {
+  color: #1976D2;
+  font-size: 0.9rem;
+}
+
+.episodes-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 3rem;
+  background-color: #191919;
+}
+.episodes-container .filterdiv {
+  height: auto;
+  width: auto;
+  background-color: #fff;
+}
+.episodes-container .filterdiv .field-grp {
+  padding: 1rem;
+  height: 40px;
+  line-height: 2rem;
+}
+.episodes-container .filterdiv .field-grp #name, .episodes-container .filterdiv .field-grp #episode {
+  width: 300px;
+  padding: 0 1rem;
+  margin: 1rem 0;
+  height: 55px;
+}
+.episodes-container .episode-grpimg {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.episodes-container .episode-grpimg .images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.episodes-container .episode-grpimg .images img {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
+.episodes-container .episode-grpimg .episodes-card {
+  display: block;
+  height: auto;
+  width: 330px;
+  line-height: 2rem;
+  border-radius: 6px;
+  background-color: #fff;
+}
+.episodes-container .episode-grpimg .episodes-card .title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+.episodes-container .episode-grpimg .episodes-card button {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  border: none;
+  width: 30px;
+  border-radius: 50%;
+  font-size: 10px;
+  cursor: pointer;
+}
+.episodes-container .episode-grpimg .episodes-card button:hover {
+  background-color: #c9c9c9;
+}
+.episodes-container .episode-grpimg .episodes-card .desc {
+  padding: 1rem;
+}
+.episodes-container .episode-grpimg .episodes-card .desc h2 {
+  font-weight: 100;
+}
+.episodes-container .episode-grpimg .episodes-card .desc p {
+  font-size: 0.8rem;
+}
+.episodes-container .episode-grpimg .episodes-card .character {
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+}
+.episodes-container .episode-grpimg .episodes-card .character img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.episodes-container .episode-grpimg .chr {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+.episodes-container .episode-grpimg .small-char {
+  margin-right: -1rem;
+}
+.episodes-container .episode-grpimg .small-char img {
+  width: 40px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.pagination-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #181818;
+}
+
+.pagination {
+  width: 40%;
+  padding: 0 2rem;
+  height: 80px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  justify-content: space-between;
+}
+.pagination button {
+  height: 40px;
+  width: 100px;
+  background-color: #1976D2;
+  color: #fff;
+  border-radius: 12px;
+  border: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+.footer p {
+  font-size: 14px;
+}
+.footer p a {
+  color: #383737;
+}/*# sourceMappingURL=style.css.map */
