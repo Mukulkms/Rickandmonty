@@ -60,7 +60,7 @@ return(
                 </div>
 
                 <div className="links">
-                    <Link to='/Charinfo'>Learn More</Link>
+                <Link to={`/Charinfo/${item.id}`}>Learn More</Link>
                 </div>
             </div>
         </div>

@@ -1,5 +1,6 @@
 import Header from './header';
 import Footer from './footer';
+import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 const Charpage = () => {
     const [chardata, setChardata] = useState([]);
@@ -155,7 +156,7 @@ const Charpage = () => {
                                 <p>Type: {item.type}</p>
                             </div>
                             <div className="links">
-                                <a href>Learn More</a>
+                            <Link to={`/Charinfo/${item.id}`}>Learn More</Link>
                             </div>
                         </div>
                     ))}

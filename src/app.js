@@ -11,13 +11,11 @@ const Approuter = () =>{
     return(
         <div>
             <Routes>
-                <Route path='/'element={<SingleChar/>}></Route>
-                <Route path='/Charinfo'element={<Charinfo/>}></Route>
-                <Route path='/Charpage'element={<Charpage/>}></Route>
-                <Route path='/Episodespage'element={<Episodespage/>}></Route>
-               
-            </Routes>
-                  
+                <Route path='/' element={<SingleChar/>}></Route>
+                <Route path='/Charinfo/:id' element={<Charinfo/>}></Route> {/* Added route parameter */}
+                <Route path='/Charpage' element={<Charpage/>}></Route>
+                <Route path='/Episodespage' element={<Episodespage/>}></Route>
+            </Routes>         
         </div>
     )
 }

@@ -175,6 +175,7 @@
   display: flex;
   justify-content: center;
   gap: 1rem;
+  flex-wrap: wrap;
   padding: 1.5rem;
 }
 .episode-container .episode-card-grp .e-card1 {
@@ -275,6 +276,9 @@
 .character-info .charinfo p {
   line-height: 1.5rem;
   font-weight: 600;
+}
+.character-info .charinfo p span {
+  font-weight: 100;
 }
 
 .char-container {
